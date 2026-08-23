@@ -5,6 +5,11 @@
       "type": "promptString",
       "description": "GitHub Personal Access Token",
       "password": true
+    },
+    {
+      "id": "ado_organization",
+      "type": "promptString",
+      "description": "Azure DevOps organization name (e.g. contoso)"
     }
   ],
   "servers": {
@@ -35,6 +40,10 @@
       "headers": {
         "X-MCP-Toolsets": "actions, code_security, dependabot, discussions, issues, orgs, projects, pull_requests, repos, secret_protection, security_advisories, copilot, copilot_spaces"
       }
+    },
+    "ado-remote-mcp": {
+      "type": "http",
+      "url": "https://mcp.dev.azure.com/${input:ado_organization}"
     },
     "Azure MCP Server": {
       "command": "npx",
