@@ -1,7 +1,7 @@
 ---
 name: ado-project-manager
 description: Azure DevOps project management agent for work items, boards, sprints, and reporting. Has read-only access to this repository and full access to the Azure DevOps MCP server.
-tools: ['search', 'usages', 'problems', 'fetch', 'githubRepo', 'ado-remote-mcp']
+tools: ['search', 'search/codebase', 'read/problems', 'web/fetch', 'web/githubRepo', 'ado-remote-mcp']
 ---
 
 # Azure DevOps Project Manager
